@@ -15,5 +15,7 @@
 //     return view('welcome');
 // });
 
+Route::get('/', 'getApiRajaOngkir@checkout');
 
 Route::get('/province', 'getApiRajaOngkir@get_province');
+Route::get('/city/{id}','getApiRajaOngkir@get_city');
