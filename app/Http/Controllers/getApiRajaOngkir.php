@@ -7,10 +7,9 @@ use Illuminate\Support\Facades\Http;
 
 class getApiRajaOngkir extends Controller
 {
-    public function checkout(){
+    public function list_city(){
         $provinsi = $this->get_province();
-        //mengarah kepada file checkout.blade.php yang ada di view
-        return view('checkout', ['provinsi' => $provinsi]);
+        return view('list_city', ['provinsi' => $provinsi]);
     }
 
     public function get_province(){
@@ -37,9 +36,7 @@ class getApiRajaOngkir extends Controller
         if ($err) {
             echo "cURL Error #:" . $err;
         } else {
-            //ini kita decode data nya terlebih dahulu
             $response=json_decode($response,true);
-            //ini untuk mengambil data provinsi yang ada di dalam rajaongkir resul
             $data_pengirim = $response['rajaongkir']['results'];
             return $data_pengirim;
         }
