@@ -71,6 +71,11 @@ if ($err) {
 }
 ```
 
+File Soal Task 1
+```
+/task1.php
+```
+
 Kunjungi [rajaongkir](http://rajaongkir.com/)
 
 Documentasi akun [starter](http://rajaongkir.com/dokumentasi/starter)
