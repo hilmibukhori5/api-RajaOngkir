@@ -3,10 +3,6 @@
 
 **Instalasi**
 
-Download package dengan composer
-```
-composer require hilmibukhori5/api-RajaOngkir
-```
 
 Edit kode berikut di file getApiRajaOngkir.php untuk konfigurasi API rajaongkir
 ```
